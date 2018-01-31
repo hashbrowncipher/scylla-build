@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ANTLR_JAR=/build/antlr3/antlr-complete/target/antlr-complete-3.5.2-no-st3.jar
+java -jar $ANTLR_JAR "$@"
