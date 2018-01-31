@@ -1,0 +1,9 @@
+[submodule "scylla"]
+	path = scylla
+	url = https://github.com/scylladb/scylla.git
+[submodule "antlr3"]
+	path = antlr3
+	url = https://github.com/antlr/antlr3.git
+[submodule "thrift"]
+	path = thrift
+	url = https://github.com/apache/thrift.git
