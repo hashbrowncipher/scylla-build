@@ -36,5 +36,5 @@ RUN apt-get install -y \
   libxml2-dev libpciaccess-dev \
   libaio-dev
 WORKDIR /build/scylla
-RUN ./configure.py
+RUN ./configure.py --static-libthrift
 RUN ninja
