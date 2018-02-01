@@ -7,7 +7,7 @@ RUN apt-get install -y \
 WORKDIR /build/thrift
 RUN ./bootstrap.sh
 RUN ./configure
-RUN make -j4
+RUN make -j
 RUN make install
 ADD antlr3 /build/antlr3
 # antlr3 deps
@@ -36,5 +36,5 @@ RUN apt-get install -y \
   libxml2-dev libpciaccess-dev \
   libaio-dev
 WORKDIR /build/scylla
-RUN ./configure.py --static-libthrift
+RUN ./configure.py --static-thrift --mode=release
 RUN ninja
